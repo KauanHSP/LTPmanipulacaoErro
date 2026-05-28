@@ -47,7 +47,7 @@ function processarCadastro(dados) {
         validarCadastro(dados)
         return {sucesso: true ,dados: dados}
     } catch (erro) {
-        console.log("ERRO , falha no cadastro:")
+        console.log("\nERRO , falha no cadastro:\n")
         return {sucesso: false , erros: erro.campos }
     }
 }
